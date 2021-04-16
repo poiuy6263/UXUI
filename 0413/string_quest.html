@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        1. 사용자로부터 영문 이름을 입력 받은 후
+        전부 대문자로 변환해서  출력
+        2. 주민등록번호를 입력받아서 아래형태로 출력하시오.
+        990424 - ******* 출력이 되게 작성
+       */ 
+      var text = prompt("이름을 입력하시오")
+          document.write(text.toUpperCase(),"<br>");
+
+
+          var num = prompt("주민번호 입력하시오")
+          document.write(num.substr(0,8),"******","<br>");
+
+
+          var primarynumber = prompt("주민등록번호 입력하세요");
+          primarynumber = primarynumber.substring(0,primarynumber.length-6);
+          document.write(primarynumber+"******");
+
+      
+       
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

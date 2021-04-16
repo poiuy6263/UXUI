@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    /*
+    숫자 하나를 입력받으면 해당 숫자의 팩토리얼 값을 출력
+    */
+   /*
+   i는 1부터 곱할값, fac 팩토리얼 결과값, n 입력받을 숫자
+   */
+   var n, i=1, fac=1;
+   n= Number(prompt("계산할 팩토리얼 값을 입력"));
+   while(i<=n){
+       fac *= i
+    //    fac *=1, fac *=2, fac*=3... 
+       i++
+   }
+   document.write(fac);
+
+   /*
+   다른 방법
+   while(n>1){
+       fan *=n;
+       5입력
+       fac *=5, fac*=4, fac *3=3....
+       n --;
+   }
+   */
+   
+</script>
+</head>
+<body>
+    
+</body>
+</html>

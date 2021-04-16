@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       body::-webkit-scrollbar{
+           width: 5px;
+
+       }
+       body::-webkit-scrollbar-thumb{
+                  background-color: yellow;
+                  border-radius: 5px;
+       }
+       body::-webkit-scrollbar-track{
+           background-color: black
+       }
+       /* 좌측 세로 메뉴 CSS */
+       .left_menu{
+           width: 60px;
+           height: 1040px;
+           box-sizing: border-box;
+           position: fixed;
+           left: 0px;
+           top: 0px;
+           background-color: gray;
+       }
+       .left_menu li{
+           padding: 16px 0px;
+           background-color: white;
+           text-align: center;
+       }
+       header{
+           width: 1860px;
+           height: 500px;
+           box-sizing: border-box;
+           margin-left: 60px;
+       }
+       .main_menu{
+        width: 1800px;
+           height: 50px;
+           box-sizing: border-box;
+           margin-left: 60px;
+       }
+       section{
+           width: 1800px;
+           height: 200px;
+           box-sizing: border-box;
+           margin-left: 60px;
+       }
+       head{
+           box-sizing: border-box;
+       }
+      ul{
+          list-style-type: none;
+          text-align: center;
+      }
+      .main_menu > ul {
+          background-color: greenyellow;
+         
+      }
+      .main_menu li{
+          display: inline-block;
+          margin: 0px 64px;
+         
+      }
+      button{
+          border: none;
+      }
+      section{
+          text-align: center;
+          box-sizing: border-box;
+          margin-top: -10px;
+      }
+      .abc{
+          background-color: greenyellow;
+          border: 1px solid black;
+          color: white;
+          position: absolute;
+          bottom:  128px;
+          left: 128px;ad
+      }
+      .abcd{
+          margin: 0px 16px;
+      }
+   </style>
+</head>
+<body>
+    <nav class="left_menu">
+        <ul>
+            <li><button><img src="/0401/img/messenger.png" alt="" width="40px"></button></li>
+            <li><button><img src="/0401/img/messenger.png" alt="" width="40px"></button></li>
+            <li><button><img src="/0401/img/messenger.png" alt="" width="40px"></button></li>
+            <li><button><img src="/0401/img/messenger.png" alt="" width="40px"></button></li>
+            <li><button><img src="/0401/img/messenger.png" alt="" width="40px"></button></li>
+        </ul>
+    </nav>
+    <header class="head">
+        <img src="/0401/img/0401-1.jpg" alt="" width="1800px" height="500px">
+    </header>
+    <nav class="main_menu">
+        <ul>
+            <li><button><img src="/0401/img/home.png" alt="" width="40px"></button></li>
+            <li><button><img src="/0401/img/home.png" alt="" width="40px"></button></li>
+            <li><button><img src="/0401/img/home.png" alt="" width="40px"></button></li>
+            <li><button><img src="/0401/img/home.png" alt="" width="40px"></button></li>
+            <li><button><img src="/0401/img/home.png" alt="" width="40px"></button></li>
+        </ul>
+    </nav>
+    <section>
+        <img src="/0318/사진4.jpg" alt="" width="1800px" height="300px">
+        <img src="/0318/사진4.jpg" alt="" width="1400px" height="300px">
+        <h2>PRINT</h2>
+        <img src="/0318/사진4.jpg" alt="" width="500px" class="abcd">
+        <img src="/0318/사진4.jpg" alt="" width="500px" class="abcd">
+        <img src="/0318/사진4.jpg" alt="" width="500px" class="abcd">
+    </section>
+    <div class="abc">
+        <h2>국회는 국가의 예산안을 심의·확정한다.</h2>
+        사법권은 법관으로 구성된 법원에 속한다.
+      </div>
+</body>
+</html>

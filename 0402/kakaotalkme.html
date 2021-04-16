@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         header{
+            text-align: center;
+            margin-top: 64px;
+        }
+        nav{
+            padding-top: 32px;
+            padding-bottom: 8px;
+        }
+        div{
+            border: 1px solid lightgray;
+            margin: 0 auto;
+            width: 500px;
+            height: 800px;
+        }
+        input{
+            border: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+        nav , section{
+            text-align: left;
+            margin: 0px 50px;
+        }
+        .textbar_2{
+            width: 300px;
+            height: 24px;
+        }
+    
+        .textbar{
+            width: 400px;
+            height: 24px;
+    
+        }
+        footer li{
+            display: inline-block;
+            text-align: center;
+            font-size: 8px;
+        }
+        footer ul{
+            text-align: center;
+            list-style-type: none;
+        }
+        article li{
+            font-size: 8px;
+            color : lightsteelblue;
+        }
+        .a1 h4{
+            padding-bottom: 8px;
+        }
+        .a1 li{
+            padding-bottom: 8px;
+            padding-left: 16px;
+        }
+        .a1 input{
+            border-bottom: 1px solid gray;
+        }
+        a{
+            text-decoration: underline;
+        }
+        .a2 input{
+            border-bottom: 1px solid gray;
+        }
+        .a3 h4{
+            padding-top: 8px;
+        }
+        .a3 input{
+            width: 360px;
+        }
+        .a3 span{
+            font-size: 12px;
+            font-weight: 12px;
+        }
+        .a3 input{
+            border-bottom: 1px solid gray;
+        }
+        }
+        .a4 h4{
+            padding-top: 8px;
+        }
+        .a4 input{
+            width: 350px;
+        }
+        .a4 select{
+            width: 50px;
+        }
+        .a4 input{
+            border-bottom: 1px solid gray;
+        }
+        .a5 input{
+            width: 100px;
+           background-color: lightseagreen;
+            border-radius: 12px;
+            padding: 4px 0px;
+            margin: 8px 0px;
+        }
+        .a8 input{
+            width: 350px;
+            background-color: gray;
+            padding: 4px 0px;
+            
+        }
+        .a8{
+            text-align: center;
+        }
+        .kakao{
+            border-bottom: 1px solid black;
+            padding-top: 32px;
+        }
+    </style>
+    </head>
+<body>
+    <header class="title"><h2>kakao</h2></header>
+  <div>
+    <nav><h3>카카오계정 정보를 입력해 주세요.</h3></nav>
+    <section>
+        <article class="a1">
+            <h4>카카오계정 이메일</h4>
+            <a href="#"><input type="text" placeholder="아이디입력" class="textbar_2"></a><span class="kakao">@kakao.com</span><br>
+            <ul>
+                <li>입력한 카카오메일로 카카오계정에 로그인할 수 있습니다.</li>
+                <li>한번 만든 카카오메일은 변경할 수 없으니, 오타가 없도록 신중히 확인해 주세요.</li>
+                <li>생성한 카카오메일로 카카오계정과 관련한 알림을 받아볼 수 있습니다.</li>
+            </ul>
+        </article>
+        <article class="a2">
+            <h4>비밀번호</h4>
+            <a href="#"><input type="text" placeholder="비밀번호(8~32자리)" class="textbar"></a> <br>
+            <a href="#"><input type="text" placeholder="비밀번호 재입력" class="textbar"></a><br>
+        </article>
+        <article class="a3">
+            <h4>닉네임</h4>
+            <a href="#"><input type="text" placeholder="닉네임을 입력해 주세요." class="textbar"></a>
+            <span>0/20</span><br>
+        </article>
+        <article class="a4">
+            <h4>전화번호</h4>
+            <a href="#"><select name="전화번호" id="tel">
+                <option value="A" selected>+82</option>
+                <option value="B">010</option>
+                <option value="C" >011</option>
+                <option value="D">02</option>
+            </select></a><a href="#"><input type="text" placeholder="전화번호" ></a><br>
+        </article>
+        <article class="a5">
+           <a href="#"><input type="button" value="인증번호 전송"></a>
+        </article>
+        </article>
+        <article class="a8">
+        <a href="#"><input type="button" value="다음" class="daum"></a>
+        </article>
+    </section>
+  </div>
+  <footer>
+      <ul>
+        <a href="#"><li>이용약관</li></a> 
+        <a href="#"><li>개인정보 처리방침</li></a> 
+        <a href="#"><li>운영정책</li></a> 
+        <a href="#"><li>고객센터</li></a> 
+        <a href="#"><li>공지사항</li></a> 
+        <a href="#"><li><select name="언어" id="language">
+            <option value="k" selected>한국어</option>
+        </select></li>
+    </a> 
+      </ul>
+  </footer>
+</body>
+</html>

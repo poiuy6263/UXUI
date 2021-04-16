@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+              }   
+              ul{
+                  list-style-type: none
+              } 
+              .leftmenu li{
+                  display: inline-block;
+              }  
+              .leftmenu{
+                  width: 40px;
+                  height: 100%;
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+              }
+              .leftmenu img{
+                  width: 40px;
+                  height: 40px;
+                  padding: 16px 0px;
+              }
+              header{
+                  width: 1800px;
+                  height: 400px;
+                  margin-left: 40px;
+              }
+              header img{
+                  width: 100%;
+                  height: 100%;
+              }
+              .homemenu{
+                  width: 1800px;
+                  height: 40px;
+                  background-color: skyblue;
+                  text-align: center;
+                  margin-left: 40px;
+              }
+              .homemenu li{
+                  display: inline-block;
+                  background-color: skyblue;
+                  padding: 8px 40px;
+                  
+              }
+              .homemenu a{
+                  text-decoration: none;
+                  color: white;
+                  font-weight: bold;
+                  
+              }
+              section{
+                  margin-left: 40px;
+                  text-align: center;
+                  padding: 60px 0px;
+                  width: 1800px;
+              }
+              .table{
+                  margin: 0 auto;
+                  text-align: left;
+              }
+              tr,td{
+                  padding: 16px 0px;
+              }
+              .qw input{
+                  width: 300px;
+                  height: 150px;
+              }
+              .button{
+                  background-color: skyblue;
+                  color: white;
+                  border: none;
+                  padding: 16px 40px;
+                  margin: 8px 30px;
+              }
+              .ad{
+                  position: absolute;
+                  top: 50px;
+                  right: 150px;
+              }
+              .ad img{
+                  width: 150px;
+                  height: 150px;
+              }
+              label{
+                  font-size: 20px;
+                  font-weight: bold;
+              }
+              .content input{
+                  width: 300px;
+                  height: 150px;
+              }
+   </style>
+</head>
+<body>
+    <div class="leftmenu">
+        <ul>
+            <li><a href="#" title="홈세로메뉴이동"><img src="/0405/home.png" alt="홈이동아이콘"> </a></li>
+            <li><a href="#" title="헤드폰세로메뉴이동"><img src="/0405/headphone.png" alt="헤드폰이동아이콘"> </a></li>
+            <li><a href="#" title="티비세로메뉴이동"><img src="/0405/tv.png" alt="티비이동아이콘"> </a></li>
+            <li><a href="#" title="컵세로메뉴이동"><img src="/0405/cup.png" alt="컵이동아이콘"> </a></li>
+            <li><a href="#" title="그림세로메뉴이동"><img src="/0405/picture.png" alt="그림이동아이콘"> </a></li>
+        </ul>
+        </div>
+    <header>
+       <img src="/0405/header_img.jpg" alt="헤드이미지">
+    </header>
+    <nav class="homemenu">
+        <div>
+            <ul>
+                <li><a href="#" title="홈페이지이동">HOME</a></li>
+                <li><a href="#" title="COFFE페이지이동">COFFEE</a></li>
+                <li><a href="#" title="CF페이지이동">CF</a></li>
+                <li><a href="#" title="PRINT페이지이동">PRINT</a></li>
+                <li><a href="#" title="문의하기페이지이동">문의하기</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section>
+        <h2>제품 문의하기</h2>
+        <form action="" method="get" name=""> 
+        <table class="table">
+            <tr>
+                <td><label for="id">제목</label></td>
+                <td><input type="text" placeholder="제목을 입력해주세요" id="id" required></td>
+            </tr>
+            <tr>
+                <td><label for="writer">작성자</label></td>
+                <td><input type="text" id="writer" placeholder="작성자 성함 입력해주세요" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">답변받을 이메일</label></td>
+                <td><input type="text" placeholder="이메일 주소" id="email" required>@</td>
+                <td><select name="email" id="email">
+                <option value="F" selected>google.com</option>
+                <option value="A">naver.com</option>
+                <option value="B">hanmail.net</option>
+                <option value="C">직접 입력</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+                <td><label for="content">문의내용</label></td>
+                <td class="content" colspan="2"><input type="text" id="content" placeholder="문의 내용 입력바람" required></td>
+            </tr>
+        </table>
+    </form>
+      <a href="#" title="문의하기 페이지 이동">
+          <input type="button" value="문의하기" class="button"></a> 
+          <a href="#"title="초기화이동"> 
+              <input type="button"  value="초기화" class="button">
+            </a>
+    </section>
+   <div class="ad">
+       <img src="/0405/content_img.jpg" alt="광고메뉴아이콘">
+   </div>
+</body>
+</html>
